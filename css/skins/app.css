@@ -1,0 +1,17 @@
+.fizz {
+    color: darksalmon;
+    background-color: khaki;
+    font-weight: bolder;
+}
+
+.buzz {
+    color: khaki;
+    background-color: rgb(114, 111, 105);
+    font-weight: bolder;
+}
+
+.fizzBuzz {
+    color: khaki;
+    background-color: rgb(36, 34, 34);
+    font-weight: bolder;
+}
