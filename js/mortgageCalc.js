@@ -15,7 +15,6 @@ function calculatePayment(loan, months, mthRate) {
     let x = Math.pow(1 + mthRate, months);
     return (loan * x * mthRate) / (x - 1);
 
-    // Source: https://www.oreilly.com/library/view/javascript-the-definitive/0596000480/ch01s08.html
 }
 
 // Get Payments (build payment array)

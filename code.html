@@ -62,7 +62,7 @@
                                     <a class="nav-link menu-link" href="code.html">See My Code</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link menu-link" href="//github.com/morgang823/Mortgage-Calc"
+                                    <a class="nav-link menu-link" href="//github.com/morgang823/fizzbuzz"
                                         target="_blank">Get The
                                         Code</a>
                                 </li>
@@ -437,15 +437,17 @@
         <script src="js/site.js"></script>
         <!-- Prism JS -->
         <script src="/js/prism_default.js"></script>
-        <!-- Code 1 Popup Modal -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-                <img src="" class="img-fluid" alt="">
-                <div class="portfolio-links">
+
+
+            <!-- Code 1 Popup Modal -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                    <img src="" class="img-fluid" alt="">
+                    <div class="portfolio-links">
                     <a href="javascript:void();" data-target="#code1Modal" data-toggle="modal" title="App 1"><i
                             class="bx bx-plus"></i></a>
-                    <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+                            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+                        </div>
             </div>
         </div>
         <!-- This is the code that makes the modal itself -->
@@ -453,22 +455,22 @@
         <!-- The second div defines the modal - vertically centered and large size -->
         <!-- Code1 Modal Section -->
         <div class="modal fade" id="code1Modal" tabindex="-1" role="dialog" aria-labelledby="code1Modal"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLongTitle">Create Build Payment Schedule Function</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Create Build Payment Schedule Function</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     </div>
                     <div class="modal-body">
                         <div class="container">
                             <div class="row">
                                 <div class="col">
                                     <pre class="line-numbers"><code class="language-javascript">//Function to build payment schedule 
-function buildPaymentSchedule() {
-    let loan = +document.getElementById('loanAmount').value;
+                                        function buildPaymentSchedule() {
+                                            let loan = +document.getElementById('loanAmount').value;
     let months = +document.getElementById('loanTerm').value * 12;
     let mthRate = (+document.getElementById('loanRate').value * 0.01) / 12;
 
@@ -478,8 +480,8 @@ function buildPaymentSchedule() {
     displayData(paymentArray);
     return false;
 }
-                                    </code>
-                                        </pre>
+</code>
+</pre>
                                 </div>
                             </div>
                         </div>
@@ -500,7 +502,7 @@ function buildPaymentSchedule() {
                 <img src="" class="img-fluid" alt="">
                 <div class="portfolio-links">
                     <a href="javascript:void();" data-target="#code2Modal" data-toggle="modal" title="App 1"><i
-                            class="bx bx-plus"></i></a>
+                        class="bx bx-plus"></i></a>
                     <a href="#" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
             </div>
@@ -510,13 +512,13 @@ function buildPaymentSchedule() {
         <!-- The second div defines the modal - vertically centered and large size -->
         <!-- Code2 Modal Section -->
         <div class="modal fade" id="code2Modal" tabindex="-1" role="dialog" aria-labelledby="code2Modal"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLongTitle">Function to Calculate payments</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Function to Calculate payments</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
@@ -524,10 +526,10 @@ function buildPaymentSchedule() {
                             <div class="row">
                                 <div class="col">
                                     <pre class="line-numbers"><code class="language-javascript">//Function to calculate the payments 
-function calculatePayment(loan, months, mthRate) {
-    let x = Math.pow(1 + mthRate, months);
-    return (loan * x * mthRate) / (x - 1);
-}</code></pre>
+                                        function calculatePayment(loan, months, mthRate) {
+                                            let x = Math.pow(1 + mthRate, months);
+                                            return (loan * x * mthRate) / (x - 1);
+                                        }</code></pre>
                                 </div>
                             </div>
                         </div>
@@ -541,29 +543,29 @@ function calculatePayment(loan, months, mthRate) {
             </div>
         </div>
         <!-- End Code 2 Popup Modal -->
-
+        
         <!-- Code3 Popup Modal -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
                 <img src="" class="img-fluid" alt="">
                 <div class="portfolio-links">
                     <a href="javascript:void();" data-target="#code3Modal" data-toggle="modal" title="App 1"><i
-                            class="bx bx-plus"></i></a>
-                    <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+                        class="bx bx-plus"></i></a>
+                        <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- This is the code that makes the modal itself -->
-        <!-- The first div declares the modal -->
-        <!-- The second div defines the modal - vertically centered and large size -->
-        <!-- Code3 Modal Section -->
+            <!-- This is the code that makes the modal itself -->
+            <!-- The first div declares the modal -->
+            <!-- The second div defines the modal - vertically centered and large size -->
+            <!-- Code3 Modal Section -->
         <div class="modal fade" id="code3Modal" tabindex="-1" role="dialog" aria-labelledby="code3Modal"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLongTitle">Create Get Payments Function</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Create Get Payments Function</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -572,64 +574,64 @@ function calculatePayment(loan, months, mthRate) {
                             <div class="row">
                                 <div class="col">
                                     <pre class="line-numbers"><code class="language-javascript">// Get Payments (build payment array)
-function getPayments(loan, payment, months, mthRate) {
-    let paymentArray = [];
+                                        function getPayments(loan, payment, months, mthRate) {
+                                            let paymentArray = [];
     let totalInterest = 0;
     let balance = loan;
     let interest = 0;
     let principal = 0;
-
+    
     for (let i = 1; i <= months; i++) {
         let obj = {};
-
+        
         interest = balance * mthRate;
         principal = payment - interest;
         totalInterest += interest;
         balance -= principal;
-
+        
         obj['month'] = i;
         obj['payment'] = payment;
         obj['principal'] = principal;
         obj['interest'] = interest;
         obj['totalInterest'] = totalInterest;
         obj['balance'] = Math.abs(balance); // Fix negative value
-
+        
         paymentArray.push(obj);
     }
-
+    
     return paymentArray;
 }</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <!-- <a href="" class="btn btn-primary" target="_blank">Visit
-                        </a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Code 3 Popup Modal -->
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <!-- <a href="" class="btn btn-primary" target="_blank">Visit
+    </a> -->
+</div>
+</div>
+</div>
+</div>
+<!-- End Code 3 Popup Modal -->
 
-        <!-- Code 4 Popup Modal -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-                <img src="" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                    <a href="javascript:void();" data-target="#code4Modal" data-toggle="modal" title="App 1"><i
-                            class="bx bx-plus"></i></a>
-                    <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+<!-- Code 4 Popup Modal -->
+<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+    <div class="portfolio-wrap">
+        <img src="" class="img-fluid" alt="">
+        <div class="portfolio-links">
+            <a href="javascript:void();" data-target="#code4Modal" data-toggle="modal" title="App 1"><i
+                class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
             </div>
         </div>
-        <!-- This is the code that makes the modal itself -->
-        <!-- The first div declares the modal -->
-        <!-- The second div defines the modal - vertically centered and large size -->
+    </div>
+    <!-- This is the code that makes the modal itself -->
+    <!-- The first div declares the modal -->
+    <!-- The second div defines the modal - vertically centered and large size -->
         <!-- Code4 Modal Section -->
         <div class="modal fade" id="code4Modal" tabindex="-1" role="dialog" aria-labelledby="code4Modal"
-            aria-hidden="true">
+        aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -643,27 +645,27 @@ function getPayments(loan, payment, months, mthRate) {
                             <div class="row">
                                 <div class="col">
                                     <pre class="line-numbers"><code class="language-javascript">// Set Stats
-function displayStats(payment, loan, paymentArray) {
-    // Total Interest
+                                        function displayStats(payment, loan, paymentArray) {
+                                            // Total Interest
     let totalInterest = paymentArray.reduce((acc, cv) => acc + cv.interest, 0);
     let totalCost = totalInterest + loan;
-
+    
     document.getElementById('payment').innerHTML = payment.toLocaleString(
         'en-US', {
             style: 'currency',
             currency: 'USD'
         }
-    );
-    document.getElementById('totalPrincipal').innerHTML = loan.toLocaleString(
-        'en-US', {
-            style: 'currency',
-            currency: 'USD',
-        }
-    );
-    document.getElementById(
+        );
+        document.getElementById('totalPrincipal').innerHTML = loan.toLocaleString(
+            'en-US', {
+                style: 'currency',
+                currency: 'USD',
+            }
+            );
+            document.getElementById(
         'totalInterest'
-    ).innerHTML = totalInterest.toLocaleString('en-US', {
-        style: 'currency',
+        ).innerHTML = totalInterest.toLocaleString('en-US', {
+            style: 'currency',
         currency: 'USD',
     });
     document.getElementById('totalCost').innerHTML = totalCost.toLocaleString(
@@ -671,9 +673,9 @@ function displayStats(payment, loan, paymentArray) {
             style: 'currency',
             currency: 'USD',
         }
-    );
+        );
 }</code></pre>
-                                </div>
+</div>
                             </div>
                         </div>
                     </div>
@@ -686,8 +688,8 @@ function displayStats(payment, loan, paymentArray) {
             </div>
         </div>
         <!-- End Code 4 Popup Modal -->
-
-
+        
+        
         <!-- -->
         <!-- Code 5 Popup Modal -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
@@ -695,17 +697,17 @@ function displayStats(payment, loan, paymentArray) {
                 <img src="" class="img-fluid" alt="">
                 <div class="portfolio-links">
                     <a href="javascript:void();" data-target="#code5Modal" data-toggle="modal" title="App 1"><i
-                            class="bx bx-plus"></i></a>
-                    <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+                        class="bx bx-plus"></i></a>
+                        <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- This is the code that makes the modal itself -->
+            <!-- This is the code that makes the modal itself -->
         <!-- The first div declares the modal -->
         <!-- The second div defines the modal - vertically centered and large size -->
         <!-- Code4 Modal Section -->
         <div class="modal fade" id="code5Modal" tabindex="-1" role="dialog" aria-labelledby="code4Modal"
-            aria-hidden="true">
+        aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -720,27 +722,27 @@ function displayStats(payment, loan, paymentArray) {
                             <div class="row">
                                 <div class="col">
                                     <pre class="line-numbers"><code class="language-javascript">// Display event data
-function displayData(paymentArray) {
-    const myTemplate = document.getElementById('Data-Template');
-    const resultsBody = document.getElementById('resultsBody');
-
-    // clear table first
-    resultsBody.innerHTML = '';
-
-    // Number format reference https://www.w3schools.com/jsref/jsref_tolocalestring_number.asp
-    for (let i = 0; i < paymentArray.length; i++) {
-        const dataRow = document.importNode(myTemplate.content, true);
-
+                                        function displayData(paymentArray) {
+                                            const myTemplate = document.getElementById('Data-Template');
+                                            const resultsBody = document.getElementById('resultsBody');
+                                            
+                                            // clear table first
+                                            resultsBody.innerHTML = '';
+                                            
+                                            // Number format reference https://www.w3schools.com/jsref/jsref_tolocalestring_number.asp
+                                            for (let i = 0; i < paymentArray.length; i++) {
+                                                const dataRow = document.importNode(myTemplate.content, true);
+                                                
         dataRow.getElementById('month').textContent = paymentArray[i].month;
         dataRow.getElementById('payment').textContent = paymentArray[
-            i
+        i
         ].payment.toLocaleString('en-US', {
             style: 'decimal',
             minimumFractionDigits: '2',
             maximumFractionDigits: '2',
         });
         dataRow.getElementById('principal').textContent = paymentArray[
-            i
+        i
         ].principal.toLocaleString('en-US', {
             style: 'decimal',
             minimumFractionDigits: '2',
@@ -748,42 +750,41 @@ function displayData(paymentArray) {
         });
         dataRow.getElementById('interest').textContent = paymentArray[
             i
-        ].interest.toLocaleString('en-US', {
-            style: 'decimal',
-            minimumFractionDigits: '2',
-            maximumFractionDigits: '2',
+            ].interest.toLocaleString('en-US', {
+                style: 'decimal',
+                minimumFractionDigits: '2',
+                maximumFractionDigits: '2',
         });
         dataRow.getElementById('totalInterest').textContent = paymentArray[
-            i
+        i
         ].totalInterest.toLocaleString('en-US', {
             style: 'decimal',
             minimumFractionDigits: '2',
             maximumFractionDigits: '2',
         });
         dataRow.getElementById('balance').textContent = paymentArray[
-            i
+        i
         ].balance.toLocaleString('en-US', {
             style: 'decimal',
             minimumFractionDigits: '2',
             maximumFractionDigits: '2',
         });
-
+        
         resultsBody.appendChild(dataRow);
     }
 }
-    }</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <!-- <a href="" class="btn btn-primary" target="_blank">Visit
-                        </a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Code 5 Popup Modal -->
-
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <!-- <a href="" class="btn btn-primary" target="_blank">Visit
+    </a> -->
+</div>
+</div>
+</div>
+</div>
+<!-- End Code 5 Popup Modal -->
 </body>
